@@ -1,4 +1,4 @@
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`💚💚💚Assertion Passed: [${actual}] === [${expected}]`);
   } else {
@@ -10,7 +10,7 @@ const countLetters = (letters) => {
   letters = letters.replace(/\s/g, ""); //removes spaces, can remove different chars if we want
   const resultObj = {};
 
-  for (ltr of letters) {
+  for (const ltr of letters) {
     if (resultObj[ltr]) {
       resultObj[ltr] += 1;
     } else {
