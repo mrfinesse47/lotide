@@ -11,10 +11,10 @@ const countLetters = (letters) => {
   const resultObj = {};
 
   for (ltr of letters) {
-    if (!resultObj[ltr]) {
-      resultObj[ltr] = 1;
-    } else {
+    if (resultObj[ltr]) {
       resultObj[ltr] += 1;
+    } else {
+      resultObj[ltr] = 1;
     }
   }
   return resultObj;
