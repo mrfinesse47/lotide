@@ -1,4 +1,4 @@
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`💚💚💚Assertion Passed: [${actual}] === [${expected}]`);
   } else {
@@ -20,7 +20,7 @@ const eqArrays = (arr1, arr2) => {
 
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
-const eqObjects = function (object1, object2) {
+const eqObjects = function(object1, object2) {
   const obj1Keys = Object.keys(object1);
   console.log(obj1Keys);
 
@@ -28,7 +28,7 @@ const eqObjects = function (object1, object2) {
     return false;
   }
 
-  for (key of obj1Keys) {
+  for (const key of obj1Keys) {
     if (object1[key] !== object2[key]) {
       if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {
         //if they are both arrays
