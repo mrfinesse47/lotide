@@ -19,7 +19,6 @@ const takeUntil = (arr, callback) => {
   const resultArr = [];
 
   for (const el of arr) {
-    console.log(callback(el));
     if (callback(el)) {
       return resultArr;
     } else {
