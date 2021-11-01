@@ -15,5 +15,5 @@ const eqArrays = (arr1, arr2) => {
   return true;
 };
 
-// assertArraysEqual([1, 2, 3], [1, 2, 3]); //passed
+assertArraysEqual([1, 2, 3], [1, 2, 3]); //passed
 // assertArraysEqual([2, 3, 4, 5], [3, 4, 5, 6]); //failed
