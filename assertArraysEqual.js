@@ -8,6 +8,4 @@ const assertArraysEqual = function(arr1, arr2) {
   }
 };
 
-assertArraysEqual([1, 2, 3], [1, 2, 3]); //passed
-
-assertArraysEqual([2, 3, 4, 5], [3, 4, 5, 6]); //failed
+module.exports = assertArraysEqual;
