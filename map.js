@@ -4,7 +4,7 @@
 // A callback function
 // The map function will return a new array based on the results of the callback function.
 
-const map = function (array, callback) {
+const map = function(array, callback) {
   const results = [];
   for (let item of array) {
     results.push(callback(item));
@@ -13,7 +13,7 @@ const map = function (array, callback) {
   return results;
 };
 
-const assertArraysEqual = function (arr1, arr2) {
+const assertArraysEqual = function(arr1, arr2) {
   if (eqArrays(arr1, arr2)) {
     console.log(`💚💚💚Assertion Passed: [${arr1}] === [${arr2}]`);
   } else {
