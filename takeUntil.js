@@ -1,4 +1,4 @@
-const assertArraysEqual = function(arr1, arr2) {
+const assertArraysEqual = function (arr1, arr2) {
   if (eqArrays(arr1, arr2)) {
     console.log(`💚💚💚Assertion Passed: [${arr1}] === [${arr2}]`);
   } else {
@@ -55,3 +55,5 @@ assertArraysEqual(
 // [ 1, 2, 5, 7, 2 ]
 // ---
 // [ 'I\'ve', 'been', 'to', 'Hollywood' ]
+
+module.exports = takeUntil;

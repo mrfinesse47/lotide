@@ -1,4 +1,4 @@
-const assertEqual = function(actual, expected) {
+const assertEqual = function (actual, expected) {
   if (actual === expected) {
     console.log(`💚💚💚Assertion Passed: [${actual}] === [${expected}]`);
   } else {
@@ -25,3 +25,5 @@ assertEqual(countLetters("apple banana pear")["a"], 5);
 assertEqual(countLetters("apple banana pear")["p"], 3);
 assertEqual(countLetters("apple banana pear")["l"], 1);
 assertEqual(countLetters("apple banana pear")["e"], 2);
+
+module.exports = countLetters;

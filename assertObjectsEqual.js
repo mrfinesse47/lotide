@@ -12,7 +12,7 @@ const eqArrays = (arr1, arr2) => {
 
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
-const eqObjects = function(object1, object2) {
+const eqObjects = function (object1, object2) {
   const obj1Keys = Object.keys(object1);
 
   if (obj1Keys.length !== Object.keys(object2).length) {
@@ -36,7 +36,7 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
-const assertObjectsEqual = function(actual, expected) {
+const assertObjectsEqual = function (actual, expected) {
   const inspect = require("util").inspect; // <= add this line
   if (eqObjects(actual, expected)) {
     console.log(
@@ -65,3 +65,5 @@ assertObjectsEqual(
 );
 
 assertObjectsEqual({}, {});
+
+module.exports = assertObjectsEqual;

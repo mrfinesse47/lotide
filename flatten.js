@@ -1,4 +1,4 @@
-const assertArraysEqual = function(arr1, arr2) {
+const assertArraysEqual = function (arr1, arr2) {
   if (eqArrays(arr1, arr2)) {
     console.log(`💚💚💚Assertion Passed: [${arr1}] === [${arr2}]`);
   } else {
@@ -30,3 +30,5 @@ const flatten = (arr) => {
 const res = flatten([1, 2, [3, 4], 5, [6]]);
 
 assertArraysEqual(res, [1, 2, 3, 4, 5, 6]);
+
+module.exports = flatten;
