@@ -17,7 +17,6 @@ describe("#findKeyByValue", () => {
     );
   });
   it("Should return undefined for That 70s Show", () => {
-    console.log((bestTVShowsByGenre, "That 70s Show"));
     assert((bestTVShowsByGenre, "That 70s Show"), undefined);
   });
 });
