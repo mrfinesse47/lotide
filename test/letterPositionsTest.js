@@ -24,5 +24,3 @@ it('should detect the letter positions in array format when "helllllooooo" is pa
     assert.deepEqual(letterPositions("hello there today")["t"], [6, 12]);
   });
 });
-
-// assertArraysEqual(letterPositions("hello there today")["t"], [6, 12]);
